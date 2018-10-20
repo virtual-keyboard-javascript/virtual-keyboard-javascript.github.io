@@ -1,20 +1,208 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Virtual Keyboard Javascript</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<html lang="en">
 
-    simple-keyboard
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="manifest" href="img/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>simple-keyboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">simple-keyboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#welcome">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#getstarted">Getting Started</a>
+            </li>
+            <li class="nav-item">
+              <svg>
+                  <path d="M12.007 0C6.12 0 1.1 4.27.157 10.08c-.944 5.813 2.468 11.45 8.054 13.312.19.064.397.033.555-.084.16-.117.25-.304.244-.5v-2.042c-3.33.735-4.037-1.56-4.037-1.56-.22-.726-.694-1.35-1.334-1.756-1.096-.75.074-.735.074-.735.773.103 1.454.557 1.846 1.23.694 1.21 2.23 1.638 3.45.96.056-.61.327-1.178.766-1.605-2.67-.3-5.462-1.335-5.462-6.002-.02-1.193.42-2.35 1.23-3.226-.327-1.015-.27-2.116.166-3.09 0 0 1.006-.33 3.3 1.23 1.966-.538 4.04-.538 6.003 0 2.295-1.5 3.3-1.23 3.3-1.23.445 1.006.49 2.144.12 3.18.81.877 1.25 2.033 1.23 3.226 0 4.607-2.805 5.627-5.476 5.927.578.583.88 1.386.825 2.206v3.29c-.005.2.092.393.26.507.164.115.377.14.565.063 5.568-1.88 8.956-7.514 8.007-13.313C22.892 4.267 17.884.007 12.008 0z" />
+              </svg>
+              <a class="nav-link" href="https://github.com/hodgef/simple-keyboard" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-white">
+      <div class="container text-center">
+        <h1>Meet the <span>sleek</span> virtual keyboard for Javascript</h1>
+        <p class="lead">Compatible with your ES6, React, Vue, Angular or jQuery projects</p>
+        <div class="buttonContainer">
+          <button type="button" class="btn btn-outline-light downloadbtn"><a class="js-scroll-trigger" href="#getstarted">Get started</a></button>
+        </div>
+      </div>
+    </header>
+
+    <section id="welcome">
+      <div class="container">
+        <div class="welcome-row">
+          <div class="mx-auto inputKeyboardContainer">
+            <div class="inputContainer">
+              <i class="material-icons circ_animate dot_icon">
+                  trip_origin
+              </i>
+              <input maxlength="70" class="simple-keyboard-input" placeholder="Tap on the keyboard or type to start" />
+            </div>
+            <div class="keyboardContainer">
+                <div class="simple-keyboard"></div>
+            </div>
+          </div>
+          <div class="srollicon">
+              <a class="nav-link js-scroll-trigger" href="#features"><i class="material-icons">keyboard_arrow_down</i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Features you'll love</h2>
+            <p class="lead">
+              <ul>
+                <li>
+                  <div class="uTitle">
+                      Compatible with your favorite frameworks and libraries
+                  </div>
+                  <div class="uDesc">
+                    <ul class="buttonItems">
+                      <li><a href="https://codesandbox.io/s/github/hodgef/demo_npm_simple-keyboard" target="_blank">Vanilla JS</a></li>
+                      <li><a href="https://github.com/hodgef/react-simple-keyboard" target="_blank">React</a></li>
+                      <li><a href="https://codesandbox.io/s/github/hodgef/demo_npm_simple-keyboard_angular-js" target="_blank">Angular JS</a></li>
+                      <li><a href="https://codesandbox.io/s/github/hodgef/demo_npm_simple-keyboard_vue-js" target="_blank">Vue JS</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="uTitle">
+                      Multiple languages supported
+                  </div>
+                  <div class="uDesc">
+                    <ul class="buttonItems commaSeparated">
+                      <li>English</li>
+                      <li>Spanish</li>
+                      <li>French</li>
+                      <li>German</li>
+                      <li>Russian</li>
+                      <li>Arabic</li>
+                      <li>Russian</li>
+                      <li>Chinese</li>
+                      <li>Japanese</li>
+                      <li>Korean</li>
+                      <li>Hindi</li>
+                      <li>Thai</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="uTitle">
+                      No dependencies, tiny size
+                  </div>
+                  <div class="uDesc">
+                      <p>simple-keyboard is coded in pure ES6 JS. No need for extra libraries get started.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="uTitle">
+                    Focused on customization and flexibility
+                  </div>
+                  <div class="uDesc">
+                      <p>simple-keyboard makes it easy to adapt the look and functionality of your virtual keyboard.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="uTitle">
+                    Painless styling
+                  </div>
+                  <div class="uDesc">
+                      <p>simple-keyboard follows a CSS Flexbox layout, meaning a straightforward styling experience.</p>
+                  </div>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="getstarted">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Getting Started</h2>
+            <p class="lead">The simple-keyboard installation docs will get you going in a breeze.</p>
+            <button type="button" class="btn btn-outline-dark installdocs btn-lg"><a href="https://franciscohodge.com/projects/simple-keyboard/getting-started/" target="_blank">Read the installation docs</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 2018 <a href="http://franciscohodge.com">Francisco Hodge</a></p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
   </body>
+
 </html>
