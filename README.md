@@ -1,2 +1,2 @@
-# simple-keyboard welcome site
+# simple-keyboard Intro Site
 https://virtual-keyboard.js.org/
