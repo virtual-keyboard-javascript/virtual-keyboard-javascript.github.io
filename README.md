@@ -1,2 +1,2 @@
-# simple-keyboard github.io site
-https://virtual-keyboard-javascript.github.io
+# simple-keyboard welcome site
+https://virtual-keyboard.js.org/
