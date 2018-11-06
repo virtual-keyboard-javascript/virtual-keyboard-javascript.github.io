@@ -315,6 +315,14 @@ footer a {
   
 }
 
+.uDescLink {
+  margin-top: 10px;
+}
+
+.uDescLink a {
+  font-size: 15px;
+}
+
 /*
   Media queries
 */
