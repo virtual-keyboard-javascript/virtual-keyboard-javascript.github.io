@@ -133,7 +133,7 @@ let Keyboard = window.SimpleKeyboard.default;
     mergeDisplay: true,
     onInit: () => {
       $('body').addClass('keyboard-shown');
-      $(".simple-keyboard-input").focus();
+      //$(".simple-keyboard-input").focus();
     },
     layout: null,
     display: {}
@@ -142,7 +142,10 @@ let Keyboard = window.SimpleKeyboard.default;
   resizeHandler();
 
   function onChange(input) {
-    document.querySelector(".tagSndLine").innerHTML = input || "Compatible with your JS, React, Vue, Angular or jQuery projects.";
+    if(!window.skTagline){
+      window.skTagline = document.querySelector('.tagSndLine').innerHTML;
+    }
+    document.querySelector(".tagSndLine").innerHTML = input || window.skTagline;
     console.log("Input changed", input);
   }
 
@@ -241,7 +244,7 @@ let Keyboard = window.SimpleKeyboard.default;
             "{abc}": "ABC"
           }
         });
-        document.querySelector(".simple-keyboard-input").setAttribute("placeholder", "Tap on the keyboard");
+        //document.querySelector(".simple-keyboard-input").setAttribute("placeholder", "Tap on the keyboard");
         mobileDisableInput();
       }
     } else {
@@ -268,7 +271,7 @@ let Keyboard = window.SimpleKeyboard.default;
           },
           display: {}
         });
-        document.querySelector(".simple-keyboard-input").setAttribute("placeholder", "Tap on the keyboard or type to start");
+        //document.querySelector(".simple-keyboard-input").setAttribute("placeholder", "Tap on the keyboard or type to start");
         allowInput();
       }
     }
@@ -279,7 +282,7 @@ let Keyboard = window.SimpleKeyboard.default;
      * If mobile, no keyboard deploy..
      */
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      document.querySelector(".simple-keyboard-input").setAttribute("readonly", "true");
+      //document.querySelector(".simple-keyboard-input").setAttribute("readonly", "true");
 
       keyboard.setOptions({
         physicalKeyboardHighlight: false
@@ -292,7 +295,7 @@ let Keyboard = window.SimpleKeyboard.default;
   }
 
   function allowInput(){
-    document.querySelector(".simple-keyboard-input").removeAttribute("readonly");
+    /*document.querySelector(".simple-keyboard-input").removeAttribute("readonly");*/
 
     keyboard.setOptions({
       physicalKeyboardHighlight: true

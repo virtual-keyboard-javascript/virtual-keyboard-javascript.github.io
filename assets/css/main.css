@@ -119,6 +119,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 			transition: none !important;
 		}
 
+		.spotlight {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			margin: 0 0 2em 0;
+			justify-content: space-around;
+		}
+
+		.content {
+			max-width: 800px;
+		}
+
 		.sideLink {
 			position: absolute;
 			top: 0;
@@ -177,6 +194,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 		.inputContainer {
 			margin-top: 0;
+		}
+
+		.tagSndLine a {
+			text-decoration: none;
+			border: none;
 		}
 
 		input.simple-keyboard-input {

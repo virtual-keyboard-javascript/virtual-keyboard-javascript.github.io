@@ -1,0 +1,81 @@
+body {
+  color: #758596;
+  background: #f1f1f1;
+}
+  
+h1 {
+  color: #758596;
+  border-color: #758596;
+}
+
+.simple-keyboard.hg-theme-default {
+  border-radius: 10px;
+  background: #e6e6e6;
+}
+
+#header.alt {
+  padding: 5em 5em 4em 5em;
+}
+
+.btnContainer .button {
+  box-shadow: inset 0 0 0 2px rgba(53, 73, 94, 0.6);
+  color: #758596;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  color: rgba(53, 73, 94, 1) !important;
+}
+
+#main input[type="submit"].primary, #main input[type="reset"].primary, #main input[type="button"].primary, #main button.primary, #main .button.primary {
+  background-color: #758596;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+
+#main {
+  background-color: #ffffff;
+  color: #636363;
+  border-radius: 0.25em;
+  border: 3px solid rgba(0,0,0,0.1);
+}
+
+nav#nav {
+  border: 3px solid rgba(0,0,0,0.1);
+  border-bottom: none;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover {
+  background-color: rgba(53, 73, 94, 0.075);
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(53, 73, 94, 0.35);
+  color: rgba(53, 73, 94, 1) !important;
+}
+
+.icon.style1 {
+  color: #758596;
+  opacity: 0.8;
+}
+
+#main header.major h2:after {
+  background: none;
+  background-color: rgba(53, 73, 94, 0.35);
+}
+
+#main input[type="submit"].primary:hover, #main input[type="reset"].primary:hover, #main input[type="button"].primary:hover, #main button.primary:hover, #main .button.primary:hover {
+  background-color: #1c4995;
+}
+
+.sideLink svg, .sideLink i {
+  height: 25px;
+  vertical-align: middle;
+  fill: #758596;
+  overflow: hidden;
+  display: inline-block;
+  width: 25px;
+  transform: scale(1.5);
+}
