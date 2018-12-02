@@ -5,6 +5,6 @@
   <img src="https://franciscohodge.com/project-pages/simple-keyboard/images/sk_alt.png" width="500" />
  </p>
   <p>
-     Javascript Virtual Keyboard - https://virtual-keyboard.js.org/
+     Javascript Virtual Keyboard <br /> https://virtual-keyboard.js.org/
    </p>
 </div>
