@@ -1,4 +1,4 @@
-<p align="center"><img src="https://franciscohodge.com/project-pages/simple-keyboard/images/HappySK.png" width="100" align="center" /><img src="https://franciscohodge.com/project-pages/simple-keyboard/images/simplekeyboard-avatar-r.png" width="100" align="center" /></p>
+<p><img src="https://franciscohodge.com/project-pages/simple-keyboard/images/HappySK.png" width="60" align="center" /><img src="https://franciscohodge.com/project-pages/simple-keyboard/images/simplekeyboard-avatar-r.png" width="60" align="center" /></p>
 
 <div align="center">
 <p>
