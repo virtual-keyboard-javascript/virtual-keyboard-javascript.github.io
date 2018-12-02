@@ -4,7 +4,7 @@
 <p>
   <img src="https://franciscohodge.com/project-pages/simple-keyboard/images/sk_alt.png" width="500" />
  </p>
-  <p>
+  <h4>
      https://virtual-keyboard.js.org/
-   </p>
+   </h4>
 </div>
