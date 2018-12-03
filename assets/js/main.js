@@ -206,6 +206,7 @@ let Keyboard = window.SimpleKeyboard.default;
         isMobileWidth = true;
         keyboard.setOptions({
           mergeDisplay: true,
+          layoutName: "default",
           layout: {
             'default': [
               'q w e r t y u i o p',
@@ -253,6 +254,7 @@ let Keyboard = window.SimpleKeyboard.default;
 
         keyboard.setOptions({
           mergeDisplay: true,
+          layoutName: "default",
           layout: {
             'default': [
               '` 1 2 3 4 5 6 7 8 9 0 - = {backspace}',
