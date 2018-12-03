@@ -17,6 +17,18 @@ h1 {
   padding: 5em 5em 4em 5em;
 }
 
+@media screen and (max-width: 360px){
+  #header.alt {
+    padding: 3.5em 1em 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #header.alt {
+    padding: 4em 1.5em 1em 1.5em;
+  }
+}
+
 .btnContainer .button {
   box-shadow: inset 0 0 0 2px rgba(53, 73, 94, 0.6);
   color: #758596;
