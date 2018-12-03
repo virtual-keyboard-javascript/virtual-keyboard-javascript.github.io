@@ -3021,6 +3021,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 		}
 
+		.simple-keyboard.hg-theme-default .hg-button[data-skbtnuid^="numbers-"] {
+			width: 33%;
+			max-width: none;
+		}
+
 /* Statistics */
 
 	.statistics {
