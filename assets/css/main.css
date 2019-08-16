@@ -3253,7 +3253,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 		}
 
 		#header.alt {
-			padding: 4em 0em 4em 0em;
+			padding: 0em 0em 4em 0em;
 			display: flex;
 		}
 
