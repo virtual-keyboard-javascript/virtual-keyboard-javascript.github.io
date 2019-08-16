@@ -87,6 +87,10 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
+
+	}
+
+@media screen and (max-width: 600px) {
 		
 		.rightAlign {
 			display: none;
