@@ -3269,6 +3269,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     max-width: 60px;
 }
 
+.rightAlign a {
+    text-decoration: none;
+    border-bottom: none !important;
+}
+
 			#header.alt h1 {
 				font-size: 3.25em;
 			}
@@ -3961,9 +3966,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* Wrapper */
 
 	#wrapper {
-		width: 64em;
+		/*width: 64em;
 		max-width: calc(100% - 4em);
-		margin: 0 auto;
+		margin: 0 auto;*/
+		    margin: 80px;
 	}
 
 		@media screen and (max-width: 480px) {
