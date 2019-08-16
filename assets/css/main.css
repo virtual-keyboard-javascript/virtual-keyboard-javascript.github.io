@@ -95,6 +95,10 @@ input, select, textarea {
 		.rightAlign {
 			display: none;
 		}
+	
+	#wrapper {
+    margin: 0;
+}
 
 	}
 
