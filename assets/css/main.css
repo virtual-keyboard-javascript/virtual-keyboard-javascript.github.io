@@ -220,7 +220,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 			width: 100%;
 			z-index: 3;
 			max-width: 850px;
-			margin: 0 auto;
+			/*margin: 0 auto;*/
 			font-size: 20px;
 			margin-bottom: 40px;
 		}
@@ -3240,7 +3240,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 	#header {
 		padding: 5em 5em 1em 5em ;
-		text-align: center;
+		/*text-align: center;*/
 	}
 
 		#header h1 {
@@ -3253,8 +3253,17 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 4em 0em 4em 0em;
+			display: flex;
 		}
+
+	#header.alt .leftAlign {
+		flex: 1
+	}
+
+#header.alt .rightAlign {
+		    text-align: right;
+	}
 
 			#header.alt h1 {
 				font-size: 3.25em;
