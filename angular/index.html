@@ -1,195 +1,137 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135256973-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-135256973-1');
-</script>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Angular Virtual Keyboard - Customizable, reponsive, lightweight. Screen keyboard for Angular projects, Available on Github and NPM.">
-    <meta name="author" content="Francisco Hodge">
-    <link rel="apple-touch-icon" sizes="57x57" href="../img/ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../img/ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../img/ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../img/ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../img/ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../img/ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../img/ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../img/ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../img/ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/ico/favicon-16x16.png">
-    <link rel="manifest" href="../img/ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
+   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135256973-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-135256973-1');
+      </script>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="description" content="Angular Virtual Keyboard - Customizable, reponsive, lightweight. Screen keyboard for Angular projects, Available on Github and NPM.">
+      <meta name="author" content="Francisco Hodge">
+      <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/ico/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/ico/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/ico/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ico/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/ico/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/ico/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/ico/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/ico/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/ico/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/ico/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ico/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/ico/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ico/favicon-16x16.png">
+      <link rel="manifest" href="../assets/img/ico/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="mobile-web-app-capable" content="yes">
+      <title>Simple-keyboard - The Slick Virtual Keyboard for Angular</title>
+      <meta property="og:title" content="Simple-keyboard - Angular Virtual Keyboard">
+      <meta property="og:description" content="Angular Virtual Keyboard - Customizable, reponsive, lightweight. Screen keyboard for Angular projects, Available on Github and NPM.">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta property="og:image" content="https://franciscohodge.com/project-pages/simple-keyboard/images/simple-keyboard-bn.png">
+      <meta property="og:url" content="https://virtual-keyboard.js.org">
+      <meta property="og:site_name" content="simple-keyboard">
+      <meta name="twitter:image:alt" content="Simple-keyboard">
+      <link rel="stylesheet" href="../assets/css/fonts.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/simple-keyboard@latest/build/css/index.css">
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="custom.css" />
+      <link href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css" rel="stylesheet">
+      <noscript>
+         <link rel="stylesheet" href="../assets/css/noscript.css" />
+      </noscript>
+   </head>
+   <body class="is-preload">
+      <!-- Wrapper -->
+      <div id="wrapper">
+         <div class="left-content">
+            <div class="intro-content">
+                <h1>simple-keyboard</h1>
+                <p>The slick virtual keyboard for Angular.<br />
+                    <span class="tagSndLine">Customizable. Responsive. Lightweight.</p>
+                <div class="qDemo">
+                    <div class="keyboardContainer">
+                        <div class="simple-keyboard"></div>
+                    </div>
+                </div>
 
-    <title>simple-keyboard - The Slick Virtual Keyboard for Angular</title>
+                <div class="btnContainer">
+                    <a href="https://simple-keyboard.com/demo" target="_blank" class="button github">
+                        <span>View Demos</span>
+                    </a>
+                    <a href="https://simple-keyboard.com/getting-started/" class="button github">
+                        <span>Documentation</span>
+                    </a>
+                </div>
+            </div>
+         </div>
 
-    <meta property="og:title" content="Simple-keyboard - Angular Virtual Keyboard">
-    <meta property="og:description" content="Angular Virtual Keyboard - Customizable, reponsive, lightweight. Screen keyboard for Angular projects, Available on Github and NPM.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="https://franciscohodge.com/project-pages/simple-keyboard/images/simple-keyboard-bn.png">
-    <meta property="og:url" content="https://virtual-keyboard.js.org">
-    <meta property="og:site_name" content="simple-keyboard">
-    <meta name="twitter:image:alt" content="Simple-keyboard">
-		<link rel="stylesheet" href="../assets/css/fonts.css" />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://unpkg.com/simple-keyboard@latest/build/css/index.css">
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="stylesheet" href="angular.css" />
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-		<script>
-			window.skTagline = "Customizable. Responsive. Lightweight.";
-		</script>
-	</head>
-	<body class="is-preload">
+         <div class="right-content">
+            <div class="content-detail">
+                <div class="content-block">
+                    <p>Simple-keyboard is a fast, dependency-free and customizable virtual keyboard for rich and snappy Angular applications.</p>
+                 </div>
+    
+                 <div class="content-block">
+                    <h2><i class="twa twa-heart"></i> Features</h2>
+                    <ul class="ul-features">
+                        <li>Supports Angular without the need for extra plugins.</li>
+                        <li>Many options and methods to enhance customization.</li>
+                        <li>Flex-box layout for easy styling.</li>
+                        <li>Supports Modules such as Autocorrect, Input Mask, among others.</li>
+                        <li>Ability to style a group of buttons independently, for advanced layouts.</li>
+                        <li>Multi-keyboard instance support.</li>
+                        <li>Ready to use implementation demos.</li>
+                        <li>And more.</li>
+                    </ul>
+                 </div>
+    
+                 <div class="content-block">
+                    <h2><i class="twa twa-stars"></i> Supported Languages</h2>
+                    <ul class="ul-lang">
+                        <li>Arabic</li>
+                        <li>Burmese</li>
+                        <li>Chinese</li>
+                        <li>Czech</li>
+                        <li>English</li>
+                        <li>French</li>
+                        <li>Georgian</li>
+                        <li>German</li>
+                        <li>Hindi</li>
+                        <li>Italian</li>
+                        <li>Japanese</li>
+                        <li>Kannada</li>
+                        <li>Korean</li>
+                        <li>Russian</li>
+                        <li>Sindhi</li>
+                        <li>Spanish</li>
+                        <li>Thai</li>
+                        <li>Turkish</li>
+                        <li>Ukrainian</li>
+                        <li>Urdu</li>
+                    </ul>
+                 </div>
+            </div>
+            <div class="fundzone">
+                <div id="codefund"><!-- fallback content --></div>
+                <script src="https://codefund.io/properties/423/funder.js" async="async"></script>
+            </div>
+         </div>
+      </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<div class="sideLink">
-					<a class="nav-link" href="https://github.com/hodgef/simple-keyboard" target="_blank">
-						<svg>
-							<path d="M12.007 0C6.12 0 1.1 4.27.157 10.08c-.944 5.813 2.468 11.45 8.054 13.312.19.064.397.033.555-.084.16-.117.25-.304.244-.5v-2.042c-3.33.735-4.037-1.56-4.037-1.56-.22-.726-.694-1.35-1.334-1.756-1.096-.75.074-.735.074-.735.773.103 1.454.557 1.846 1.23.694 1.21 2.23 1.638 3.45.96.056-.61.327-1.178.766-1.605-2.67-.3-5.462-1.335-5.462-6.002-.02-1.193.42-2.35 1.23-3.226-.327-1.015-.27-2.116.166-3.09 0 0 1.006-.33 3.3 1.23 1.966-.538 4.04-.538 6.003 0 2.295-1.5 3.3-1.23 3.3-1.23.445 1.006.49 2.144.12 3.18.81.877 1.25 2.033 1.23 3.226 0 4.607-2.805 5.627-5.476 5.927.578.583.88 1.386.825 2.206v3.29c-.005.2.092.393.26.507.164.115.377.14.565.063 5.568-1.88 8.956-7.514 8.007-13.313C22.892 4.267 17.884.007 12.008 0z" />
-						</svg>
-					</a>
-				</div>
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="../images/angular.png" alt="" /></span>
-						<h1>simple-keyboard</h1>
-						<p>The slick virtual keyboard for Angular<br />
-							<span class="tagSndLine">Customizable. Responsive. Lightweight.</span></p>
-						<div class="qDemo">
-								<div class="keyboardContainer">
-									<div class="simple-keyboard"></div>
-								</div>
-						</div>
-
-						<div class="btnContainer">
-								<a href="https://simple-keyboard.com/demo" target="_blank" class="button github">
-									<span>View Demos</span>
-								</a>
-							<a href="https://simple-keyboard.com/getting-started/" class="button github">
-								<span>Get Started</span>
-							</a>
-						</div>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#features">Features</a></li>
-							<!--<li><a href="#second">Getting Started</a></li>-->
-							<li><a href="#getstarted">Get Started</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-							<section id="intro" class="main">
-									<div class="spotlight">
-										<div class="content">
-											<header class="major">
-												<h2>A Screen Keyboard for the modern web</h2>
-											</header>
-											<p>Simple-keyboard is a fast, dependency-free and customizable Angular Virtual Keyboard for rich and snappy web applications. Unlike some virtual keyboards that need an extra plugin to work with Angular, simple-keyboard works out of the box.</p>
-											<p>Check out the demo for implementation examples:</p>
-											<ul class="actions">
-												<li><a href="https://simple-keyboard.com/demo" target="_blank" class="button">Explore the demos</a></li>
-											</ul>
-										</div>
-										<span class="icon major style1 fa-rocket"></span>
-									</div>
-								</section>
-
-						<!-- First Section -->
-							<section id="features" class="main special">
-								<header class="major">
-									<h2>Features you will love</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon major style1 fa-diamond"></span>
-										<h3>Customizable</h3>
-										<p>Simple-keyboard has a slew of methods, options, themes and ready-made snippets to adapt to your needs.</p>
-									</li>
-									<li>
-										<span class="icon major style1 fa-expand"></span>
-										<h3>Responsive</h3>
-										<p>Simple-keyboard is built upon a simple and responsive CSS flexbox layout. No more &#x3C;br /&#x3E; tags for row separation.</p>
-									</li>
-									<li>
-										<span class="icon major style1 fa-tachometer"></span>
-										<h3>Lightweight</h3>
-										<p>Simple-keyboard doesn't depend on any library. It is coded in pure ES6 JS, and feather-light at ~5kB bundle size.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://simple-keyboard.com/features" target="_blank" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Get Started -->
-							<section id="getstarted" class="main special">
-								<header class="major">
-									<h2>Ready to get started?</h2>
-									<p>The simple-keyboard installation docs will get you started in a breeze.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://simple-keyboard.com/getting-started/" class="button primary">Get Started</a></li>
-										<li><a href="https://simple-keyboard.com/demo" target="_blank" class="button">View the demos</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; 2018 <a href="https://franciscohodge.com" target="_blank">Francisco Hodge</a>. Template designed by: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.
-						<br /><br/>
-						Featured in <a href="https://javascriptweekly.com/issues/410" target="_blank">Javascript Weekly</a>,
-						<a href="https://javascriptkicks.com/stories/94720/simple-keyboard" target="_blank">Javascript Kicks</a>,
-						<a href="https://webtoolsweekly.com/archives/issue-261/" target="_blank">Web Tools Weekly</a>,
-						<a href="https://frontendfoc.us/issues/364" target="_blank">Frontend Focus</a>,
-						<a href="https://www.html.it/12/11/2018/simple-keyboard-tastiera-virtuale-in-javascript/" target="_blank">HTML.it</a> and more. <span class="smTxt">(Thank you!)</span>
-
-						<br /><br />
-						<a href="https://github.com/hodgef/simple-keyboard" target="_blank" class="button">Star on Github</a>
-						</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="https://unpkg.com/simple-keyboard@latest/build/index.js"></script>
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-
-	</body>
+      <!-- Scripts -->
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/simple-keyboard@latest/build/index.js"></script>
+      <script src="../assets/js/jquery.min.js"></script>
+      <script src="../assets/js/main.js"></script>
+   </body>
 </html>
