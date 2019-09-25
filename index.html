@@ -133,5 +133,23 @@
       <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/main.js"></script>
+      
+      <script>
+         if(jQuery){
+            var isIE = false;
+            var ua = window.navigator.userAgent;
+            var old_ie = ua.indexOf('MSIE ');
+            var new_ie = ua.indexOf('Trident/');
+
+            if ((old_ie > -1) || (new_ie > -1)) {
+               isIE = true;
+            }
+
+            if ( isIE ) {
+            console.log("IE Detected!");
+               jQuery("body").prepend('<div class="warnie"><strong>Warning:</strong> Internet Explorer is not supported. Please upgrade to a more modern browser.</div>');
+            }
+         }
+      </script>
    </body>
 </html>
