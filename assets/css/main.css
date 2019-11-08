@@ -295,6 +295,11 @@ h2 i {
   line-height: 1;
 }
 
+strong {
+    font-weight: 500;
+    color: #1c4994;
+}
+
 @media screen and (max-width: 945px) {
     div#wrapper {
         display: block;
