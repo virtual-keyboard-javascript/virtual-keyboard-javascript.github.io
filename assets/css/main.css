@@ -112,6 +112,8 @@ div#wrapper {
     padding: 40px;
     flex: 1;
     overflow-y: auto;
+    display: flex;
+    flex-flow: column;
 }
 
 .intro-content {
