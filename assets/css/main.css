@@ -106,10 +106,10 @@ div#wrapper {
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
+    padding: 40px;
 }
 
 .content-detail {
-    padding: 40px;
     flex: 1;
     overflow-y: auto;
     display: flex;
