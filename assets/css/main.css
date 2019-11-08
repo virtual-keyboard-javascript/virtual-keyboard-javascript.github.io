@@ -301,10 +301,6 @@ strong {
     color: #1c4994;
 }
 
-.content-block {
-    flex: 1;
-}
-
 @media screen and (max-width: 945px) {
     div#wrapper {
         display: block;
