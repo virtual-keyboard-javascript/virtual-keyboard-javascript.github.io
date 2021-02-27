@@ -20,9 +20,9 @@ resizeHandler();
 
 function onChange(input) {
     if(!window.skTagline){
-        window.skTagline = document.querySelector('.tagSndLine').innerHTML;
+        window.skTagline = document.querySelector('.tagSndLine').textContent;
     }
-    document.querySelector(".tagSndLine").innerHTML = input || window.skTagline;
+    document.querySelector(".tagSndLine").textContent = input || window.skTagline;
     console.log("Input changed", input);
     }
 
