@@ -3,12 +3,12 @@ var isMobileWidth = false;
 let Keyboard = window.SimpleKeyboard.default;
 
 let keyboard = new Keyboard({
-    onChange: input => onChange(input),
-    onKeyPress: button => onKeyPress(button),
+    onChange: function(input){ onChange(input) },
+    onKeyPress: function(button) { onKeyPress(button) },
     physicalKeyboardHighlight: true,
     maxLength: 70,
     mergeDisplay: true,
-    onInit: () => {
+    onInit: function() {
         $('body').addClass('keyboard-shown');
         //$(".simple-keyboard-input").focus();
     },
@@ -56,7 +56,7 @@ function handleNumbers() {
 }
 
 
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', function(e) {
     if(e.key === "Tab"){
         e.preventDefault();
     }
