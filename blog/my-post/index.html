@@ -1,0 +1,302 @@
+<!DOCTYPE html><html><head><meta name="description" content="This is my first post."><meta name="twitter:description" content="This is my first post."><meta property="og:title" content="My Post"><meta property="og:site_name" content="Simple-keyboard - The Modern Virtual Keyboard"><meta charset="UTF-8"><title>My Post - Simple-keyboard - The Modern Virtual Keyboard</title><style>@import url("assets/css/font-awesome.min.css");
+  @import "https://fonts.googleapis.com/css?family=Roboto:300,400";
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  input,
+  select,
+  textarea {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 17pt;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-family: "skfont";
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    border-right: 25px solid white;
+    padding-right: 25px;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+  }
+
+  a {
+    -moz-transition: color 0.2s ease, border-bottom 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom 0.2s ease;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    text-decoration: none;
+    /*border-bottom: dotted 1px;*/
+    color: inherit;
+  }
+
+  a:hover {
+    border-bottom-color: transparent;
+  }
+
+  .btnContainer .button {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+  }
+
+  .btnContainer .button:first-child {
+    margin-right: 10px;
+  }
+
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 2.75em;
+    line-height: 2.75em;
+    min-width: 9.25em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .button:hover {
+    font-weight: 400;
+  }
+
+  h1:first-child,
+  h2:first-child {
+    margin-top: 0;
+  }
+
+  div#wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  .left-content {
+    color: white;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .right-content {
+    background: #efefef;
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    padding: 40px;
+  }
+
+  .content-detail {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .intro-content {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    min-width: 600px;
+  }
+
+  h2 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  input.simple-keyboard-input {
+    border: 0;
+    padding: 20px 10px;
+    font-size: 20px;
+    flex-grow: 1;
+    width: 700px;
+    font-size: 2em;
+  }
+
+  input::placeholder {
+    color: #636363;
+  }
+
+  .keyboardContainer {
+    transition: margin-top 1s ease-in-out 0.5s, opacity 1s ease-in-out 0.5s,
+      width 0.3s linear;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    max-width: 750px;
+    /*margin: 0 auto;*/
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .keyboardContainer .simple-keyboard {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .keyboardContainer .simple-keyboard .hg-button {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    font-size: 20px;
+    font-size: 17px;
+  }
+
+  .keyboardContainer .simple-keyboard .hg-button:active {
+    background: rgba(0, 0, 0, 0.01);
+  }
+
+  .inputContainer:after {
+    display: block;
+    content: "";
+    width: 3.25em;
+    height: 2px;
+    margin: 0.7em 0 1em 0;
+    border-radius: 2px;
+  }
+
+  .inputContainer:after {
+    background-color: #dddddd;
+    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+  }
+
+  .simple-keyboard.hg-theme-default .hg-button[data-skbtnuid^="numbers-"] {
+    width: 33%;
+    max-width: none;
+  }
+
+  .content-block>p:first-child {
+    margin-top: 0;
+  }
+
+  /**
+ * Hide lang
+ */
+  .content-block:last-child {
+    display: none;
+  }
+
+  div#codefund span,
+  div#codefund strong,
+  div#codefund a {
+    color: black !important;
+    text-decoration: none;
+    border: none;
+  }
+
+  div#cf {
+    max-width: 500px !important;
+    width: 500px;
+  }
+
+  h2 i,
+  h2 em {
+    margin-right: 10px !important;
+  }
+
+  .ul-lang {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+
+  .ul-lang li {
+    background: #e0e0e0;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+
+  .fundzone {
+    border-top: 5px solid rgba(0, 0, 0, 0.01);
+  }
+
+  strong {
+    color: #1c4994;
+  }
+
+  .qDemo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .spo-widget {
+    border: none !important;
+    width: 100%;
+    height: 160px !important;
+    min-height: 160px !important;
+  }
+
+  .content-detail {
+    max-height: calc(100vh - 176px);
+  }
+
+  .right-content {
+    font-size: 21px;
+    min-height: 100vh;
+  }
+
+  @media screen and (max-width: 945px) {
+    div#wrapper {
+      display: block;
+    }
+
+    .intro-content {
+      width: 100%;
+      padding: 20px;
+      min-width: unset;
+    }
+
+    .btnContainer {
+      text-align: center;
+    }
+
+    .right-content {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    .button {
+      display: block;
+      margin-right: 0 !important;
+      margin-bottom: 10px;
+    }
+
+    .hg-button.hg-functionBtn.hg-button-space {
+      flex: 5;
+    }
+  }</style></head><body><div id="root"></div><script src="https://cdn.jsdelivr.net/npm/prss@1.8.3/build/index.min.js"></script><script src="../../items.js"></script><script crossorigin src="https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js"></script><script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script crossorigin src="https://cdn.jsdelivr.net/npm/@hodgef/blank-theme@2.0.2/build/post.js"></script><script src="../../config.js"></script><script>var PRSSElement=React.createElement(PRSSComponent.default,Object.assign({path:"/blog/my-post",templateId:"blank.post",parser:"react",item:{uuid:"bad56ace-990d-47f6-a45a-f12289165247",slug:"my-post",title:"My Post",content:"<p>This is my first post.</p>",template:"post",updatedAt:null,createdAt:1714779163703,vars:{}},rootPath:"../../",headHtml:'<title>%item.title% - %site.title%</title>\n<style>\n  @import url("assets/css/font-awesome.min.css");\n  @import "https://fonts.googleapis.com/css?family=Roboto:300,400";\n\n  body {\n    margin: 0;\n    padding: 0;\n  }\n\n  body,\n  input,\n  select,\n  textarea {\n    font-family: "Roboto", Helvetica, sans-serif;\n    font-size: 17pt;\n    font-weight: 300;\n    line-height: 1.65;\n  }\n\n  h1 {\n    font-size: 2.5em;\n    line-height: 1.2;\n    font-family: "skfont";\n    font-weight: normal;\n    font-style: normal;\n    display: inline-block;\n    border-right: 25px solid white;\n    padding-right: 25px;\n    letter-spacing: 0px;\n    margin-bottom: 0;\n  }\n\n  a {\n    -moz-transition: color 0.2s ease, border-bottom 0.2s ease;\n    -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;\n    -ms-transition: color 0.2s ease, border-bottom 0.2s ease;\n    transition: color 0.2s ease, border-bottom 0.2s ease;\n    text-decoration: none;\n    /*border-bottom: dotted 1px;*/\n    color: inherit;\n  }\n\n  a:hover {\n    border-bottom-color: transparent;\n  }\n\n  .btnContainer .button {\n    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);\n  }\n\n  .btnContainer .button:first-child {\n    margin-right: 10px;\n  }\n\n  input[type="submit"],\n  input[type="reset"],\n  input[type="button"],\n  button,\n  .button {\n    -moz-appearance: none;\n    -webkit-appearance: none;\n    -ms-appearance: none;\n    appearance: none;\n    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    border-radius: 8px;\n    border: 0;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 300;\n    height: 2.75em;\n    line-height: 2.75em;\n    min-width: 9.25em;\n    padding: 0 1.5em;\n    text-align: center;\n    text-decoration: none;\n    white-space: nowrap;\n  }\n\n  .button:hover {\n    font-weight: 400;\n  }\n\n  h1:first-child,\n  h2:first-child {\n    margin-top: 0;\n  }\n\n  div#wrapper {\n    display: flex;\n    height: 100%;\n  }\n\n  .left-content {\n    color: white;\n    flex: 1;\n    justify-content: center;\n    align-items: center;\n    display: flex;\n    padding: 20px;\n    box-sizing: border-box;\n  }\n\n  .right-content {\n    background: #efefef;\n    width: 500px;\n    box-sizing: border-box;\n    display: flex;\n    flex-flow: column;\n    padding: 40px;\n  }\n\n  .content-detail {\n    flex: 1;\n    overflow-y: auto;\n    display: flex;\n    flex-flow: column;\n  }\n\n  .intro-content {\n    display: inline-block;\n    text-align: center;\n    width: 50%;\n    min-width: 600px;\n  }\n\n  h2 {\n    font-size: 25px;\n    display: flex;\n    align-items: center;\n  }\n\n  input.simple-keyboard-input {\n    border: 0;\n    padding: 20px 10px;\n    font-size: 20px;\n    flex-grow: 1;\n    width: 700px;\n    font-size: 2em;\n  }\n\n  input::placeholder {\n    color: #636363;\n  }\n\n  .keyboardContainer {\n    transition: margin-top 1s ease-in-out 0.5s, opacity 1s ease-in-out 0.5s,\n      width 0.3s linear;\n    overflow: hidden;\n    width: 100%;\n    z-index: 3;\n    max-width: 750px;\n    /*margin: 0 auto;*/\n    font-size: 20px;\n    margin-bottom: 40px;\n  }\n\n  .keyboardContainer .simple-keyboard {\n    background: rgba(255, 255, 255, 0.9);\n  }\n\n  .keyboardContainer .simple-keyboard .hg-button {\n    color: rgba(0, 0, 0, 0.7);\n    font-weight: 300;\n    font-size: 20px;\n    font-size: 17px;\n  }\n\n  .keyboardContainer .simple-keyboard .hg-button:active {\n    background: rgba(0, 0, 0, 0.01);\n  }\n\n  .inputContainer:after {\n    display: block;\n    content: "";\n    width: 3.25em;\n    height: 2px;\n    margin: 0.7em 0 1em 0;\n    border-radius: 2px;\n  }\n\n  .inputContainer:after {\n    background-color: #dddddd;\n    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n  }\n\n  .simple-keyboard.hg-theme-default .hg-button[data-skbtnuid^="numbers-"] {\n    width: 33%;\n    max-width: none;\n  }\n\n  .content-block>p:first-child {\n    margin-top: 0;\n  }\n\n  /**\n * Hide lang\n */\n  .content-block:last-child {\n    display: none;\n  }\n\n  div#codefund span,\n  div#codefund strong,\n  div#codefund a {\n    color: black !important;\n    text-decoration: none;\n    border: none;\n  }\n\n  div#cf {\n    max-width: 500px !important;\n    width: 500px;\n  }\n\n  h2 i,\n  h2 em {\n    margin-right: 10px !important;\n  }\n\n  .ul-lang {\n    display: flex;\n    flex-wrap: wrap;\n    list-style: none;\n    padding: 0;\n  }\n\n  .ul-lang li {\n    background: #e0e0e0;\n    border-radius: 5px;\n    padding: 3px 10px;\n    margin-bottom: 5px;\n    margin-right: 5px;\n  }\n\n  .fundzone {\n    border-top: 5px solid rgba(0, 0, 0, 0.01);\n  }\n\n  strong {\n    color: #1c4994;\n  }\n\n  .qDemo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .spo-widget {\n    border: none !important;\n    width: 100%;\n    height: 160px !important;\n    min-height: 160px !important;\n  }\n\n  .content-detail {\n    max-height: calc(100vh - 176px);\n  }\n\n  .right-content {\n    font-size: 21px;\n    min-height: 100vh;\n  }\n\n  @media screen and (max-width: 945px) {\n    div#wrapper {\n      display: block;\n    }\n\n    .intro-content {\n      width: 100%;\n      padding: 20px;\n      min-width: unset;\n    }\n\n    .btnContainer {\n      text-align: center;\n    }\n\n    .right-content {\n      width: 100%;\n    }\n\n    h1 {\n      font-size: 26px;\n    }\n\n    .button {\n      display: block;\n      margin-right: 0 !important;\n      margin-bottom: 10px;\n    }\n\n    .hg-button.hg-functionBtn.hg-button-space {\n      flex: 5;\n    }\n  }\n</style>',footerHtml:"",sidebarHtml:"",vars:{}},{site:PRSSConfig}));ReactDOM.render(PRSSElement,document.getElementById("root"));</script></body></html>

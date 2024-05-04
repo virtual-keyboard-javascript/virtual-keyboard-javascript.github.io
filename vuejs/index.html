@@ -1,137 +1,302 @@
-<html>
-   <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135256973-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-135256973-1');
-      </script>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta name="description" content="Vue Virtual Keyboard - Customizable, reponsive, lightweight. Screen keyboard for Vue projects, Available on Github and NPM.">
-      <meta name="author" content="Francisco Hodge">
-      <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/ico/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/ico/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/ico/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ico/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/ico/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/ico/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/ico/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/ico/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/ico/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="../assets/img/ico/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ico/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/ico/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ico/favicon-16x16.png">
-      <link rel="manifest" href="../assets/img/ico/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="mobile-web-app-capable" content="yes">
-      <title>Simple-keyboard - The Modern Virtual Keyboard for Vue</title>
-      <meta property="og:title" content="Simple-keyboard - Vue Virtual Keyboard">
-      <meta property="og:description" content="Vue Virtual Keyboard - Customizable, reponsive, lightweight. Screen keyboard for Vue projects, Available on Github and NPM.">
-      <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:image" content="https://franciscohodge.com/project-pages/simple-keyboard/images/simple-keyboard-bn.png">
-      <meta property="og:url" content="https://virtual-keyboard.js.org">
-      <meta property="og:site_name" content="simple-keyboard">
-      <meta name="twitter:image:alt" content="Simple-keyboard">
-      <link rel="stylesheet" href="../assets/css/fonts.css" />
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
-      <link rel="stylesheet" href="../assets/css/main.css" />
-      <link rel="stylesheet" href="custom.css" />
-      <link href="https://virtual-keyboard.js.org/assets/css/twemoji-awesome.css" rel="stylesheet">
-      <noscript>
-         <link rel="stylesheet" href="../assets/css/noscript.css" />
-      </noscript>
-   </head>
-   <body class="is-preload">
-      <!-- Wrapper -->
-      <div id="wrapper">
-         <div class="left-content">
-            <div class="intro-content">
-                <h1>simple-keyboard</h1>
-                <p>The modern virtual keyboard for Vue.<br />
-                    <span class="tagSndLine">Customizable. Responsive. Lightweight.</p>
-                <div class="qDemo">
-                    <div class="keyboardContainer">
-                        <div class="simple-keyboard"></div>
-                    </div>
-                </div>
+<!DOCTYPE html><html><head><meta name="description" content="The modern virtual keyboard for Vue Customizable. Responsive. Lightweight. View Demos Documentation Simple-keyboard is a fast, dependency-free and cus..."><meta name="twitter:description" content="The modern virtual keyboard for Vue Customizable. Responsive. Lightweight. View Demos Documentation Simple-keyboard is a fast, dependency-free and cus..."><meta property="og:title" content="Vue.js"><meta property="og:site_name" content="Simple-keyboard - The Modern Virtual Keyboard"><meta charset="UTF-8"><title>Vue.js - Simple-keyboard - The Modern Virtual Keyboard</title><style>@import url("assets/css/font-awesome.min.css");
+  @import "https://fonts.googleapis.com/css?family=Roboto:300,400";
 
-                <div class="btnContainer">
-                    <a href="https://simple-keyboard.com/demo" target="_blank" class="button github">
-                        <span>View Demos</span>
-                    </a>
-                    <a href="https://simple-keyboard.com/getting-started/" class="button github">
-                        <span>Documentation</span>
-                    </a>
-                </div>
-            </div>
-         </div>
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-         <div class="right-content">
-            <div class="content-detail">
-                <div class="content-block">
-<p>Simple-keyboard is a <strong>fast</strong>, <strong>dependency-free</strong> and <strong>customizable</strong> virtual keyboard for rich and snappy web applications.</p>                 </div>
-    
-                 <div class="content-block">
-                    <h2><i class="twa twa-heart"></i> Features</h2>
-                    <ul class="ul-features">
-                        <li>Supports Vue without the need for extra plugins.</li>
-                        <li>Many options and methods to enhance customization.</li>
-                        <li>Flex-box layout for easy styling.</li>
-                        <li>Supports Modules such as Autocorrect, Input Mask, among others.</li>
-                        <li>Ability to style a group of buttons independently, for advanced layouts.</li>
-                        <li>Great for all types of apps (Kiosks, gamepad-controlled apps, etc).</li>
-                        <li>Multi-keyboard instance support.</li>
-                        <li>Ready to use implementation demos.</li>
-                        <li>And more.</li>
-                    </ul>
-                 </div>
-    
-                 <div class="content-block">
-                    <h2><i class="twa twa-stars"></i> Supported Languages</h2>
-                    <ul class="ul-lang">
-<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/arabic/">Arabic</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/burmese/">Burmese</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/chinese/">Chinese</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/czech/">Czech</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/">English</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/french/">French</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/georgian/">Georgian</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/german/">German</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/hebrew/">Hebrew</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/hindi/">Hindi</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/italian/">Italian</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/japanese/">Japanese</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/kannada/">Kannada</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/korean/">Korean</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/russian/">Russian</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/sindhi/">Sindhi</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/spanish/">Spanish</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/thai/">Thai</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/turkish/">Turkish</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/ukrainian/">Ukrainian</a></li>
- 	<li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/urdu/">Urdu</a></li>
-                    </ul>
-                 </div>
-            </div>
-            <div class="fundzone">
-               <iframe class="spo-widget" title="Sponsor Widget" src="../assets/html/sponsor.html" width="335" height="125"></iframe>
-            </div>
-         </div>
-      </div>
+  body,
+  input,
+  select,
+  textarea {
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 17pt;
+    font-weight: 300;
+    line-height: 1.65;
+  }
 
-      <!-- Scripts -->
-      <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/twemoji.min.js" crossorigin="anonymous"></script>
-      <script src="../assets/js/jquery.min.js"></script>
-      <script src="../assets/js/main.js"></script>
-   </body>
-</html>
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-family: "skfont";
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    border-right: 25px solid white;
+    padding-right: 25px;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+  }
+
+  a {
+    -moz-transition: color 0.2s ease, border-bottom 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom 0.2s ease;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    text-decoration: none;
+    /*border-bottom: dotted 1px;*/
+    color: inherit;
+  }
+
+  a:hover {
+    border-bottom-color: transparent;
+  }
+
+  .btnContainer .button {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+  }
+
+  .btnContainer .button:first-child {
+    margin-right: 10px;
+  }
+
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button,
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 2.75em;
+    line-height: 2.75em;
+    min-width: 9.25em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .button:hover {
+    font-weight: 400;
+  }
+
+  h1:first-child,
+  h2:first-child {
+    margin-top: 0;
+  }
+
+  div#wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  .left-content {
+    color: white;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .right-content {
+    background: #efefef;
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    padding: 40px;
+  }
+
+  .content-detail {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .intro-content {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    min-width: 600px;
+  }
+
+  h2 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  input.simple-keyboard-input {
+    border: 0;
+    padding: 20px 10px;
+    font-size: 20px;
+    flex-grow: 1;
+    width: 700px;
+    font-size: 2em;
+  }
+
+  input::placeholder {
+    color: #636363;
+  }
+
+  .keyboardContainer {
+    transition: margin-top 1s ease-in-out 0.5s, opacity 1s ease-in-out 0.5s,
+      width 0.3s linear;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    max-width: 750px;
+    /*margin: 0 auto;*/
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .keyboardContainer .simple-keyboard {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .keyboardContainer .simple-keyboard .hg-button {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    font-size: 20px;
+    font-size: 17px;
+  }
+
+  .keyboardContainer .simple-keyboard .hg-button:active {
+    background: rgba(0, 0, 0, 0.01);
+  }
+
+  .inputContainer:after {
+    display: block;
+    content: "";
+    width: 3.25em;
+    height: 2px;
+    margin: 0.7em 0 1em 0;
+    border-radius: 2px;
+  }
+
+  .inputContainer:after {
+    background-color: #dddddd;
+    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+  }
+
+  .simple-keyboard.hg-theme-default .hg-button[data-skbtnuid^="numbers-"] {
+    width: 33%;
+    max-width: none;
+  }
+
+  .content-block>p:first-child {
+    margin-top: 0;
+  }
+
+  /**
+ * Hide lang
+ */
+  .content-block:last-child {
+    display: none;
+  }
+
+  div#codefund span,
+  div#codefund strong,
+  div#codefund a {
+    color: black !important;
+    text-decoration: none;
+    border: none;
+  }
+
+  div#cf {
+    max-width: 500px !important;
+    width: 500px;
+  }
+
+  h2 i,
+  h2 em {
+    margin-right: 10px !important;
+  }
+
+  .ul-lang {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+
+  .ul-lang li {
+    background: #e0e0e0;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+
+  .fundzone {
+    border-top: 5px solid rgba(0, 0, 0, 0.01);
+  }
+
+  strong {
+    color: #1c4994;
+  }
+
+  .qDemo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .spo-widget {
+    border: none !important;
+    width: 100%;
+    height: 160px !important;
+    min-height: 160px !important;
+  }
+
+  .content-detail {
+    max-height: calc(100vh - 176px);
+  }
+
+  .right-content {
+    font-size: 21px;
+    min-height: 100vh;
+  }
+
+  @media screen and (max-width: 945px) {
+    div#wrapper {
+      display: block;
+    }
+
+    .intro-content {
+      width: 100%;
+      padding: 20px;
+      min-width: unset;
+    }
+
+    .btnContainer {
+      text-align: center;
+    }
+
+    .right-content {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    .button {
+      display: block;
+      margin-right: 0 !important;
+      margin-bottom: 10px;
+    }
+
+    .hg-button.hg-functionBtn.hg-button-space {
+      flex: 5;
+    }
+  }</style><script async src="https://www.googletagmanager.com/gtag/js?id=UA-135256973-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-135256973-1");</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="description" content="Onscreen virtual keyboard compatible with your ES6, React, Vue, Angular or jQuery projects. Available on Github and NPM."><meta name="author" content="Francisco Hodge"><link rel="apple-touch-icon" sizes="57x57" href="../assets/img/ico/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="../assets/img/ico/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="../assets/img/ico/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ico/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="../assets/img/ico/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="../assets/img/ico/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="../assets/img/ico/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="../assets/img/ico/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="../assets/img/ico/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="../assets/img/ico/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ico/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="../assets/img/ico/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ico/favicon-16x16.png"><link rel="manifest" href="../assets/img/ico/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><title>Simple-keyboard - The Modern Javascript Virtual Keyboard</title><meta property="og:title" content="Simple-keyboard - Javascript Virtual Keyboard"><meta property="og:description" content="Customizable, responsive and lightweight. Compatible with Vanilla JS, React, Angular, Vue and more."><meta name="twitter:card" content="summary_large_image"><meta property="og:image" content="https://franciscohodge.com/project-pages/simple-keyboard/images/simple-keyboard-bn.png"><meta property="og:url" content="https://virtual-keyboard.js.org"><meta property="og:site_name" content="simple-keyboard"><meta name="twitter:image:alt" content="Simple-keyboard"><link rel="stylesheet" href="../assets/css/fonts.css"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css"><link href="https://virtual-keyboard.js.org/assets/css/twemoji-awesome.css" rel="stylesheet"><link rel="stylesheet" href="../assets/css/main.css"><noscript><link rel="stylesheet" href="../assets/css/noscript.css"></noscript><style>.right-content{padding:0 26px}body{background-color:#48a97e}strong{color:#48a97e}</style></head><body><div id="root"></div><script src="https://cdn.jsdelivr.net/npm/prss@1.8.3/build/index.min.js"></script><script src="../items.js"></script><script crossorigin src="https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js"></script><script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script crossorigin src="https://cdn.jsdelivr.net/npm/@hodgef/blank-theme@2.0.2/build/post.js"></script><script src="../config.js"></script><script>var PRSSElement=React.createElement(PRSSComponent.default,Object.assign({path:"/vuejs",templateId:"blank.post",parser:"react",item:{uuid:"37a4da31-aa18-4ad5-80c7-165d83da7570",slug:"vuejs",title:"Vue.js",content:'      \x3c!-- Wrapper --\x3e\n      <div id="wrapper">\n          <div class="left-content">\n              <div class="intro-content">\n                  <h1>simple-keyboard</h1>\n                  <p>The modern virtual keyboard for Vue<br>\n                      <span class="tagSndLine">Customizable. Responsive. Lightweight.</span>\n                  </p>\n                  <div class="qDemo">\n                      <div class="keyboardContainer">\n                          <div class="simple-keyboard"></div>\n                      </div>\n                  </div>\n\n                  <div class="btnContainer">\n                      <a href="https://simple-keyboard.com/demo" target="_blank" class="button github">\n                          <span>View Demos</span>\n                      </a>\n                      <a href="https://simple-keyboard.com/getting-started/" class="button github">\n                          <span>Documentation</span>\n                      </a>\n                  </div>\n              </div>\n          </div>\n\n          <div class="right-content">\n              <div class="content-detail">\n                  <p>Simple-keyboard is a <strong>fast</strong>, <strong>dependency-free</strong> and <strong>customizable</strong> virtual keyboard for rich and snappy web applications.</p>\n                  <div class="content-block">\n                      <h2><em class="twa twa-heart"></em> Features</h2>\n                      <ul class="ul-features">\n                          <li>Supports Vue without the need for extra plugins.</li>\n                          <li>Many options and methods to enhance customization.</li>\n                          <li>Flex-box layout for easy styling.</li>\n                          <li>Supports Modules such as Autocorrect, Input Mask, among others.</li>\n                          <li>Ability to style a group of buttons independently, for advanced layouts.</li>\n                          <li>Great for all types of apps (Kiosks, gamepad-controlled apps, etc).</li>\n                          <li>Multi-keyboard instance support.</li>\n                          <li>Ready to use implementation demos.</li>\n                          <li>And more.</li>\n                      </ul>\n                  </div>\n\n                  <div class="content-block">\n                      <h2><em class="twa twa-stars"></em> Supported Languages</h2>\n                      <ul class="ul-lang">\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/arabic/">Arabic</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/burmese/">Burmese</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/chinese/">Chinese</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/czech/">Czech</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/">English</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/french/">French</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/georgian/">Georgian</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/german/">German</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/hebrew/">Hebrew</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/hindi/">Hindi</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/italian/">Italian</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/japanese/">Japanese</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/kannada/">Kannada</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/korean/">Korean</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/russian/">Russian</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/sindhi/">Sindhi</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/spanish/">Spanish</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/thai/">Thai</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/turkish/">Turkish</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/ukrainian/">Ukrainian</a></li>\n                          <li><a href="https://franciscohodge.com/projects/simple-keyboard/demo-showcase/languages/urdu/">Urdu</a></li>\n                      </ul>\n                  </div>\n              </div>\n\n              <div class="fundzone">\n                  <iframe class="spo-widget" scrolling="no" title="Sponsor Widget" src="../assets/html/sponsor.html" width="335" height="125"></iframe>\n              </div>\n          </div>\n\n\n\n\n\n      </div>',template:"post",updatedAt:1714782054720,createdAt:1714781635288,vars:{}},rootPath:"../",headHtml:'<title>%item.title% - %site.title%</title>\n<style>\n  @import url("assets/css/font-awesome.min.css");\n  @import "https://fonts.googleapis.com/css?family=Roboto:300,400";\n\n  body {\n    margin: 0;\n    padding: 0;\n  }\n\n  body,\n  input,\n  select,\n  textarea {\n    font-family: "Roboto", Helvetica, sans-serif;\n    font-size: 17pt;\n    font-weight: 300;\n    line-height: 1.65;\n  }\n\n  h1 {\n    font-size: 2.5em;\n    line-height: 1.2;\n    font-family: "skfont";\n    font-weight: normal;\n    font-style: normal;\n    display: inline-block;\n    border-right: 25px solid white;\n    padding-right: 25px;\n    letter-spacing: 0px;\n    margin-bottom: 0;\n  }\n\n  a {\n    -moz-transition: color 0.2s ease, border-bottom 0.2s ease;\n    -webkit-transition: color 0.2s ease, border-bottom 0.2s ease;\n    -ms-transition: color 0.2s ease, border-bottom 0.2s ease;\n    transition: color 0.2s ease, border-bottom 0.2s ease;\n    text-decoration: none;\n    /*border-bottom: dotted 1px;*/\n    color: inherit;\n  }\n\n  a:hover {\n    border-bottom-color: transparent;\n  }\n\n  .btnContainer .button {\n    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);\n  }\n\n  .btnContainer .button:first-child {\n    margin-right: 10px;\n  }\n\n  input[type="submit"],\n  input[type="reset"],\n  input[type="button"],\n  button,\n  .button {\n    -moz-appearance: none;\n    -webkit-appearance: none;\n    -ms-appearance: none;\n    appearance: none;\n    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;\n    border-radius: 8px;\n    border: 0;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 300;\n    height: 2.75em;\n    line-height: 2.75em;\n    min-width: 9.25em;\n    padding: 0 1.5em;\n    text-align: center;\n    text-decoration: none;\n    white-space: nowrap;\n  }\n\n  .button:hover {\n    font-weight: 400;\n  }\n\n  h1:first-child,\n  h2:first-child {\n    margin-top: 0;\n  }\n\n  div#wrapper {\n    display: flex;\n    height: 100%;\n  }\n\n  .left-content {\n    color: white;\n    flex: 1;\n    justify-content: center;\n    align-items: center;\n    display: flex;\n    padding: 20px;\n    box-sizing: border-box;\n  }\n\n  .right-content {\n    background: #efefef;\n    width: 500px;\n    box-sizing: border-box;\n    display: flex;\n    flex-flow: column;\n    padding: 40px;\n  }\n\n  .content-detail {\n    flex: 1;\n    overflow-y: auto;\n    display: flex;\n    flex-flow: column;\n  }\n\n  .intro-content {\n    display: inline-block;\n    text-align: center;\n    width: 50%;\n    min-width: 600px;\n  }\n\n  h2 {\n    font-size: 25px;\n    display: flex;\n    align-items: center;\n  }\n\n  input.simple-keyboard-input {\n    border: 0;\n    padding: 20px 10px;\n    font-size: 20px;\n    flex-grow: 1;\n    width: 700px;\n    font-size: 2em;\n  }\n\n  input::placeholder {\n    color: #636363;\n  }\n\n  .keyboardContainer {\n    transition: margin-top 1s ease-in-out 0.5s, opacity 1s ease-in-out 0.5s,\n      width 0.3s linear;\n    overflow: hidden;\n    width: 100%;\n    z-index: 3;\n    max-width: 750px;\n    /*margin: 0 auto;*/\n    font-size: 20px;\n    margin-bottom: 40px;\n  }\n\n  .keyboardContainer .simple-keyboard {\n    background: rgba(255, 255, 255, 0.9);\n  }\n\n  .keyboardContainer .simple-keyboard .hg-button {\n    color: rgba(0, 0, 0, 0.7);\n    font-weight: 300;\n    font-size: 20px;\n    font-size: 17px;\n  }\n\n  .keyboardContainer .simple-keyboard .hg-button:active {\n    background: rgba(0, 0, 0, 0.01);\n  }\n\n  .inputContainer:after {\n    display: block;\n    content: "";\n    width: 3.25em;\n    height: 2px;\n    margin: 0.7em 0 1em 0;\n    border-radius: 2px;\n  }\n\n  .inputContainer:after {\n    background-color: #dddddd;\n    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);\n  }\n\n  .simple-keyboard.hg-theme-default .hg-button[data-skbtnuid^="numbers-"] {\n    width: 33%;\n    max-width: none;\n  }\n\n  .content-block>p:first-child {\n    margin-top: 0;\n  }\n\n  /**\n * Hide lang\n */\n  .content-block:last-child {\n    display: none;\n  }\n\n  div#codefund span,\n  div#codefund strong,\n  div#codefund a {\n    color: black !important;\n    text-decoration: none;\n    border: none;\n  }\n\n  div#cf {\n    max-width: 500px !important;\n    width: 500px;\n  }\n\n  h2 i,\n  h2 em {\n    margin-right: 10px !important;\n  }\n\n  .ul-lang {\n    display: flex;\n    flex-wrap: wrap;\n    list-style: none;\n    padding: 0;\n  }\n\n  .ul-lang li {\n    background: #e0e0e0;\n    border-radius: 5px;\n    padding: 3px 10px;\n    margin-bottom: 5px;\n    margin-right: 5px;\n  }\n\n  .fundzone {\n    border-top: 5px solid rgba(0, 0, 0, 0.01);\n  }\n\n  strong {\n    color: #1c4994;\n  }\n\n  .qDemo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .spo-widget {\n    border: none !important;\n    width: 100%;\n    height: 160px !important;\n    min-height: 160px !important;\n  }\n\n  .content-detail {\n    max-height: calc(100vh - 176px);\n  }\n\n  .right-content {\n    font-size: 21px;\n    min-height: 100vh;\n  }\n\n  @media screen and (max-width: 945px) {\n    div#wrapper {\n      display: block;\n    }\n\n    .intro-content {\n      width: 100%;\n      padding: 20px;\n      min-width: unset;\n    }\n\n    .btnContainer {\n      text-align: center;\n    }\n\n    .right-content {\n      width: 100%;\n    }\n\n    h1 {\n      font-size: 26px;\n    }\n\n    .button {\n      display: block;\n      margin-right: 0 !important;\n      margin-bottom: 10px;\n    }\n\n    .hg-button.hg-functionBtn.hg-button-space {\n      flex: 5;\n    }\n  }\n</style>\x3c!-- Global site tag (gtag.js) - Google Analytics --\x3e\r\n<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135256973-1"><\/script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n\r\n  function gtag() {\r\n    dataLayer.push(arguments);\r\n  }\r\n  gtag(\'js\', new Date());\r\n\r\n  gtag(\'config\', \'UA-135256973-1\');\r\n<\/script>\r\n<meta charset="utf-8">\r\n<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">\r\n<meta name="description" content="Onscreen virtual keyboard compatible with your ES6, React, Vue, Angular or jQuery projects. Available on Github and NPM.">\r\n<meta name="author" content="Francisco Hodge">\r\n<link rel="apple-touch-icon" sizes="57x57" href="../assets/img/ico/apple-icon-57x57.png">\r\n<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/ico/apple-icon-60x60.png">\r\n<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/ico/apple-icon-72x72.png">\r\n<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/ico/apple-icon-76x76.png">\r\n<link rel="apple-touch-icon" sizes="114x114" href="../assets/img/ico/apple-icon-114x114.png">\r\n<link rel="apple-touch-icon" sizes="120x120" href="../assets/img/ico/apple-icon-120x120.png">\r\n<link rel="apple-touch-icon" sizes="144x144" href="../assets/img/ico/apple-icon-144x144.png">\r\n<link rel="apple-touch-icon" sizes="152x152" href="../assets/img/ico/apple-icon-152x152.png">\r\n<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/ico/apple-icon-180x180.png">\r\n<link rel="icon" type="image/png" sizes="192x192" href="../assets/img/ico/android-icon-192x192.png">\r\n<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/ico/favicon-32x32.png">\r\n<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/ico/favicon-96x96.png">\r\n<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/ico/favicon-16x16.png">\r\n<link rel="manifest" href="../assets/img/ico/manifest.json">\r\n<meta name="msapplication-TileColor" content="#ffffff">\r\n<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">\r\n<meta name="theme-color" content="#ffffff">\r\n<meta name="apple-mobile-web-app-capable" content="yes">\r\n<meta name="mobile-web-app-capable" content="yes">\r\n<title>Simple-keyboard - The Modern Javascript Virtual Keyboard</title>\r\n<meta property="og:title" content="Simple-keyboard - Javascript Virtual Keyboard">\r\n<meta property="og:description" content="Customizable, responsive and lightweight. Compatible with Vanilla JS, React, Angular, Vue and more.">\r\n<meta name="twitter:card" content="summary_large_image">\r\n<meta property="og:image" content="https://franciscohodge.com/project-pages/simple-keyboard/images/simple-keyboard-bn.png">\r\n<meta property="og:url" content="https://virtual-keyboard.js.org">\r\n<meta property="og:site_name" content="simple-keyboard">\r\n<meta name="twitter:image:alt" content="Simple-keyboard">\r\n<link rel="stylesheet" href="../assets/css/fonts.css">\r\n<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\r\n<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">\r\n<link href="https://virtual-keyboard.js.org/assets/css/twemoji-awesome.css" rel="stylesheet">\r\n<link rel="stylesheet" href="../assets/css/main.css">\r\n<noscript>\r\n  <link rel="stylesheet" href="../assets/css/noscript.css">\r\n</noscript>\r\n<style>\r\n  .right-content {\r\n    padding: 0 26px;\r\n  }\r\n\r\n  body {\r\n    background-color: #48a97e;\r\n  }\r\n  \r\n  strong {\r\n    color: #48a97e;\r\n}\r\n</style>',footerHtml:' \x3c!-- Scripts --\x3e\r\n <script src="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/twemoji.min.js" crossorigin="anonymous"><\/script>\r\n <script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"><\/script>\r\n <script src="../assets/js/jquery.min.js"><\/script>\r\n\r\n <script>\r\n   const setContent = (selector, html) => document.querySelector(selector).innerHTML = html;\r\n   const {\r\n     item\r\n   } = PRSS.getAllProps();\r\n   /*\r\n   Returns: {\r\n     "uuid":"fffb7461-1380-46d2-bca5-70696b1cda1c",\r\n     "slug":"home",\r\n     "title":"Home",\r\n     "content":"<p>This is the beginning of something great.</p>",\r\n     "template":"home",\r\n     "updatedAt":1713499483159,\r\n     "createdAt":1713390209013,\r\n     "vars":{}\r\n   }\r\n   */\r\n   //setContent("h1", item.title);\r\n   setContent("body", item.content);\r\n <\/script>\r\n\r\n <script>\r\n   if (jQuery) {\r\n     var isIE = false;\r\n     var ua = window.navigator.userAgent;\r\n     var old_ie = ua.indexOf(\'MSIE \');\r\n     var new_ie = ua.indexOf(\'Trident/\');\r\n\r\n     if ((old_ie > -1) || (new_ie > -1)) {\r\n       isIE = true;\r\n     }\r\n\r\n     if (isIE) {\r\n       console.log("IE Detected!");\r\n       jQuery("body").prepend(\'<div style="position: fixed;background: #e66365;width: 100%;z-index: 999999;padding: 20px 50px;color: white;"><strong>Warning:</strong> Internet Explorer is not supported. Please upgrade to a more modern browser.</div>\');\r\n     }\r\n   }\r\n <\/script>\r\n <script>\r\n   var isMobileWidth = false;\r\n\r\n   let Keyboard = window.SimpleKeyboard.default;\r\n\r\n   let keyboard = new Keyboard({\r\n     onChange: function(input) {\r\n       onChange(input)\r\n     },\r\n     onKeyPress: function(button) {\r\n       onKeyPress(button)\r\n     },\r\n     physicalKeyboardHighlight: true,\r\n     maxLength: 70,\r\n     mergeDisplay: true,\r\n     onInit: function() {\r\n       $(\'body\').addClass(\'keyboard-shown\');\r\n       //$(".simple-keyboard-input").focus();\r\n     },\r\n     layout: null,\r\n     display: {}\r\n   });\r\n\r\n   resizeHandler();\r\n\r\n   function onChange(input) {\r\n     if (!window.skTagline) {\r\n       window.skTagline = document.querySelector(\'.tagSndLine\').textContent;\r\n     }\r\n     document.querySelector(".tagSndLine").textContent = input || window.skTagline;\r\n     console.log("Input changed", input);\r\n   }\r\n\r\n   function onKeyPress(button) {\r\n     console.log("Button pressed", button);\r\n\r\n     if (button === "{shiftleft}" || button === "{shiftright}" || button === "{capslock}" || button === "{shift}" || button === "{lock}") handleShift();\r\n     if (button === "{numbers}" || button === "{abc}") handleNumbers();\r\n\r\n     if ($(\'.dot_icon\').hasClass(\'circ_animate\')) {\r\n       $(\'.dot_icon\').removeClass(\'circ_animate\');\r\n     }\r\n   }\r\n\r\n   function handleShift() {\r\n     let currentLayout = keyboard.options.layoutName;\r\n     let shiftToggle = currentLayout === "default" ? "shift" : "default";\r\n\r\n     keyboard.setOptions({\r\n       layoutName: shiftToggle\r\n     });\r\n   }\r\n\r\n   function handleNumbers() {\r\n     let currentLayout = keyboard.options.layoutName;\r\n     let numbersToggle = currentLayout !== "numbers" ? "numbers" : "default";\r\n\r\n     keyboard.setOptions({\r\n       layoutName: numbersToggle\r\n     });\r\n   }\r\n\r\n\r\n   document.addEventListener(\'keydown\', function(e) {\r\n     if (e.key === "Tab") {\r\n       e.preventDefault();\r\n     }\r\n   });\r\n\r\n   window.addEventListener(\'resize\', resizeHandler);\r\n   window.addEventListener(\'orientationchange\', resizeHandler);\r\n\r\n   function resizeHandler() {\r\n     if (window.innerWidth <= 850) {\r\n       if (!isMobileWidth) {\r\n         isMobileWidth = true;\r\n         keyboard.setOptions({\r\n           mergeDisplay: true,\r\n           layoutName: "default",\r\n           layout: {\r\n             \'default\': [\r\n               \'q w e r t y u i o p\',\r\n               \'a s d f g h j k l\',\r\n               \'{shiftleft} z x c v b n m {backspace}\',\r\n               \'{numbers} {space} {ent}\'\r\n             ],\r\n             \'shift\': [\r\n               \'Q W E R T Y U I O P\',\r\n               \'A S D F G H J K L\',\r\n               \'{shiftleft} Z X C V B N M {backspace}\',\r\n               \'{numbers} {space} {ent}\'\r\n             ],\r\n             \'numbers\': [\r\n               "1 2 3",\r\n               "4 5 6",\r\n               "7 8 9",\r\n               "{abc} 0 {backspace}",\r\n             ]\r\n           },\r\n           display: {\r\n             "{numbers}": "123",\r\n             "{ent}": "return",\r\n             "{escape}": "esc ⎋",\r\n             "{tab}": "tab ⇥",\r\n             "{backspace}": "⌫",\r\n             "{capslock}": "caps lock ⇪",\r\n             "{shiftleft}": "⇧",\r\n             "{shiftright}": "shift ⇧",\r\n             "{controlleft}": "ctrl ⌃",\r\n             "{controlright}": "ctrl ⌃",\r\n             "{altleft}": "alt ⌥",\r\n             "{altright}": "alt ⌥",\r\n             "{metaleft}": "cmd ⌘",\r\n             "{metaright}": "cmd ⌘",\r\n             "{abc}": "ABC"\r\n           }\r\n         });\r\n         //document.querySelector(".simple-keyboard-input").setAttribute("placeholder", "Tap on the keyboard");\r\n         mobileDisableInput();\r\n       }\r\n     } else {\r\n       if (isMobileWidth) {\r\n         isMobileWidth = false;\r\n\r\n         keyboard.setOptions({\r\n           mergeDisplay: true,\r\n           layoutName: "default",\r\n           layout: {\r\n             \'default\': [\r\n               \'` 1 2 3 4 5 6 7 8 9 0 - = {backspace}\',\r\n               \'{tab} q w e r t y u i o p [ ] \\\\\',\r\n               \'{capslock} a s d f g h j k l ; \\\' {enter}\',\r\n               \'{shiftleft} z x c v b n m , . / {shiftright}\',\r\n               \'.com @ {space}\'\r\n             ],\r\n             \'shift\': [\r\n               \'~ ! @ # $ % ^ & * ( ) _ + {backspace}\',\r\n               \'{tab} Q W E R T Y U I O P { } |\',\r\n               \'{capslock} A S D F G H J K L : " {enter}\',\r\n               \'{shiftleft} Z X C V B N M < > ? {shiftright}\',\r\n               \'.com @ {space}\'\r\n             ]\r\n           },\r\n           display: {}\r\n         });\r\n         //document.querySelector(".simple-keyboard-input").setAttribute("placeholder", "Tap on the keyboard or type to start");\r\n         allowInput();\r\n       }\r\n     }\r\n   }\r\n\r\n   function mobileDisableInput() {\r\n\r\n     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {\r\n       //document.querySelector(".simple-keyboard-input").setAttribute("readonly", "true");\r\n\r\n       keyboard.setOptions({\r\n         physicalKeyboardHighlight: false\r\n       });\r\n\r\n       $(\'body\').addClass("mobile");\r\n     } else {\r\n       $(\'body\').removeClass("mobile");\r\n     }\r\n   }\r\n\r\n   function allowInput() {\r\n\r\n     keyboard.setOptions({\r\n       physicalKeyboardHighlight: true\r\n     });\r\n   }\r\n <\/script>',sidebarHtml:"",vars:{}},{site:PRSSConfig}));ReactDOM.render(PRSSElement,document.getElementById("root"));</script><script src="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/twemoji.min.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script><script src="../assets/js/jquery.min.js"></script><script>const setContent=(t,e)=>document.querySelector(t).innerHTML=e,{item:item}=PRSS.getAllProps();setContent("body",item.content);</script><script>if(jQuery){var isIE=!1,ua=window.navigator.userAgent,old_ie=ua.indexOf("MSIE "),new_ie=ua.indexOf("Trident/");(old_ie>-1||new_ie>-1)&&(isIE=!0),isIE&&(console.log("IE Detected!"),jQuery("body").prepend('<div style="position: fixed;background: #e66365;width: 100%;z-index: 999999;padding: 20px 50px;color: white;"><strong>Warning:</strong> Internet Explorer is not supported. Please upgrade to a more modern browser.</div>'))}</script><script>var isMobileWidth=!1;let Keyboard=window.SimpleKeyboard.default,keyboard=new Keyboard({onChange:function(e){onChange(e)},onKeyPress:function(e){onKeyPress(e)},physicalKeyboardHighlight:!0,maxLength:70,mergeDisplay:!0,onInit:function(){$("body").addClass("keyboard-shown")},layout:null,display:{}});function onChange(e){window.skTagline||(window.skTagline=document.querySelector(".tagSndLine").textContent),document.querySelector(".tagSndLine").textContent=e||window.skTagline,console.log("Input changed",e)}function onKeyPress(e){console.log("Button pressed",e),"{shiftleft}"!==e&&"{shiftright}"!==e&&"{capslock}"!==e&&"{shift}"!==e&&"{lock}"!==e||handleShift(),"{numbers}"!==e&&"{abc}"!==e||handleNumbers(),$(".dot_icon").hasClass("circ_animate")&&$(".dot_icon").removeClass("circ_animate")}function handleShift(){let e="default"===keyboard.options.layoutName?"shift":"default";keyboard.setOptions({layoutName:e})}function handleNumbers(){let e="numbers"!==keyboard.options.layoutName?"numbers":"default";keyboard.setOptions({layoutName:e})}function resizeHandler(){window.innerWidth<=850?isMobileWidth||(isMobileWidth=!0,keyboard.setOptions({mergeDisplay:!0,layoutName:"default",layout:{default:["q w e r t y u i o p","a s d f g h j k l","{shiftleft} z x c v b n m {backspace}","{numbers} {space} {ent}"],shift:["Q W E R T Y U I O P","A S D F G H J K L","{shiftleft} Z X C V B N M {backspace}","{numbers} {space} {ent}"],numbers:["1 2 3","4 5 6","7 8 9","{abc} 0 {backspace}"]},display:{"{numbers}":"123","{ent}":"return","{escape}":"esc ⎋","{tab}":"tab ⇥","{backspace}":"⌫","{capslock}":"caps lock ⇪","{shiftleft}":"⇧","{shiftright}":"shift ⇧","{controlleft}":"ctrl ⌃","{controlright}":"ctrl ⌃","{altleft}":"alt ⌥","{altright}":"alt ⌥","{metaleft}":"cmd ⌘","{metaright}":"cmd ⌘","{abc}":"ABC"}}),mobileDisableInput()):isMobileWidth&&(isMobileWidth=!1,keyboard.setOptions({mergeDisplay:!0,layoutName:"default",layout:{default:["` 1 2 3 4 5 6 7 8 9 0 - = {backspace}","{tab} q w e r t y u i o p [ ] \\","{capslock} a s d f g h j k l ; ' {enter}","{shiftleft} z x c v b n m , . / {shiftright}",".com @ {space}"],shift:["~ ! @ # $ % ^ & * ( ) _ + {backspace}","{tab} Q W E R T Y U I O P { } |",'{capslock} A S D F G H J K L : " {enter}',"{shiftleft} Z X C V B N M < > ? {shiftright}",".com @ {space}"]},display:{}}),allowInput())}function mobileDisableInput(){/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)?(keyboard.setOptions({physicalKeyboardHighlight:!1}),$("body").addClass("mobile")):$("body").removeClass("mobile")}function allowInput(){keyboard.setOptions({physicalKeyboardHighlight:!0})}resizeHandler(),document.addEventListener("keydown",(function(e){"Tab"===e.key&&e.preventDefault()})),window.addEventListener("resize",resizeHandler),window.addEventListener("orientationchange",resizeHandler);</script></body></html>
