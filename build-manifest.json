@@ -1,0 +1,72 @@
+{
+  "siteUUID": "22eec317-5b92-4732-bc5e-584923bc4a99",
+  "siteHash": "d46110a0b4146640a91454e0a97da530",
+  "siteConfigHash": "3396d78c2d5c53fe52855e5b236eb9b7",
+  "mode": "deploy",
+  "items": [
+    {
+      "uuid": "4ae7f7bb-ea8b-4e05-9d7e-35358e652acb",
+      "path": "/",
+      "templateId": "blank.page",
+      "hash": "06e09b25fce7ba554bc43bef95bb8263",
+      "childHash": "6083da5617b9be9b7719df3f2ba2bebc",
+      "reused": false
+    },
+    {
+      "uuid": "b3aa3640-8b67-4a96-a021-c3d172975655",
+      "path": "/blog",
+      "templateId": "blank.page",
+      "hash": "5884936869a09654c54ad44b005ae3fb",
+      "childHash": "f3e0ad79c099018ea12b3e982cc5b579",
+      "reused": false
+    },
+    {
+      "uuid": "641be0a4-fc49-4946-afd5-6c3f31abe848",
+      "path": "/blog/node-js-version-20-6-includes-native-support-for-env-files",
+      "templateId": "blank.page",
+      "hash": "165f59029c4d3dc3c533eaf7e0c8ef60",
+      "childHash": "0c6c7c2baca2c3340951b3a079c9541d",
+      "reused": false
+    },
+    {
+      "uuid": "83246293-c794-49c0-941a-33e280a3d084",
+      "path": "/react",
+      "templateId": "blank.page",
+      "hash": "02a5302fdee4db1468e4bcb2270fb16e",
+      "childHash": "4ca89c38965cb65e00a71d77dd54cdad",
+      "reused": false
+    },
+    {
+      "uuid": "37a4da31-aa18-4ad5-80c7-165d83da7570",
+      "path": "/vuejs",
+      "templateId": "blank.page",
+      "hash": "d26a73911344c980a0ad898836c8f533",
+      "childHash": "1e0c35c90314210d539c6cd72e505904",
+      "reused": false
+    },
+    {
+      "uuid": "96613b05-3095-41f3-834c-4c45d0c7aadd",
+      "path": "/angular",
+      "templateId": "blank.page",
+      "hash": "463bce2b83c15b8296d7364371c0a9f9",
+      "childHash": "c64ec33121b41432944b509bf4d7ec71",
+      "reused": false
+    },
+    {
+      "uuid": "749fb8dc-b7f8-4161-911d-dc2c22200f18",
+      "path": "/header",
+      "templateId": "blank.component",
+      "hash": "a1e85e213bca094f0df72b793ff1527c",
+      "childHash": "3885010b8b487d0d6b6f145383ecf775",
+      "reused": false
+    },
+    {
+      "uuid": "e7112c5b-2633-4062-8368-5b2499614917",
+      "path": "/footer",
+      "templateId": "blank.component",
+      "hash": "13a085c811f481dfbb2125124098add4",
+      "childHash": "b088b408604ef602c823540655b4c5b9",
+      "reused": false
+    }
+  ]
+}
