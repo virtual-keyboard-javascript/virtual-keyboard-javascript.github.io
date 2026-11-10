@@ -1,54 +1,63 @@
 {
   "siteUUID": "22eec317-5b92-4732-bc5e-584923bc4a99",
-  "siteHash": "d46110a0b4146640a91454e0a97da530",
-  "siteConfigHash": "d3b39aee2bccfdbd94bb73b94cabef2d",
+  "siteHash": "345accfb4f426e34e4ef1070fd63a920",
+  "siteConfigHash": "6aafbc8708e80ff4db066eafc2a565d6",
   "mode": "deploy",
+  "url": "http://virtual-keyboard.js.org/",
   "items": [
     {
       "uuid": "4ae7f7bb-ea8b-4e05-9d7e-35358e652acb",
       "path": "/",
-      "templateId": "blank.page",
-      "hash": "ec2b131ccf2cc6f630a6d51698759b5e",
-      "childHash": "6083da5617b9be9b7719df3f2ba2bebc",
+      "templateId": "blank.home",
+      "hash": "01fbc0c7e6192dfe052415285326c8b4",
+      "childHash": "96d2ab6aad6bfa428bf2a771e288e080",
       "reused": false
     },
     {
       "uuid": "b3aa3640-8b67-4a96-a021-c3d172975655",
       "path": "/blog",
-      "templateId": "blank.page",
-      "hash": "6a619193196faab6774e8b00d39b757a",
+      "templateId": "blank.blog",
+      "hash": "a3b38e3a3b6549aea0ad88c42b71692b",
       "childHash": "f3e0ad79c099018ea12b3e982cc5b579",
       "reused": false
     },
     {
       "uuid": "641be0a4-fc49-4946-afd5-6c3f31abe848",
       "path": "/blog/node-js-version-20-6-includes-native-support-for-env-files",
-      "templateId": "blank.page",
-      "hash": "41b194f9c224c85b06e925a8d0f94746",
+      "templateId": "blank.post",
+      "hash": "ba2945a64edee50bd17c22c5ab84e52d",
       "childHash": "0c6c7c2baca2c3340951b3a079c9541d",
+      "reused": false
+    },
+    {
+      "uuid": "eb3835d7-b229-481b-90f6-e56200818dbf",
+      "path": "/blog/meta-muse-ember-efficiency-model",
+      "templateId": "blank.post",
+      "hash": "7312e3a3fe53cc0245396b41341a4129",
+      "childHash": "793f07b972ec841c4c465d4254c25f5a",
       "reused": false
     },
     {
       "uuid": "83246293-c794-49c0-941a-33e280a3d084",
       "path": "/react",
-      "templateId": "blank.page",
-      "hash": "2a3a70e0c4805b2657336a5443915f43",
+      "templateId": "blank.post",
+      "hash": "be203c84ca7ddab1a337411d68cb0946",
       "childHash": "4ca89c38965cb65e00a71d77dd54cdad",
       "reused": false
     },
     {
       "uuid": "37a4da31-aa18-4ad5-80c7-165d83da7570",
       "path": "/vuejs",
-      "templateId": "blank.page",
-      "hash": "83877655453737754df974ae8ef1797f",
+      "templateId": "blank.post",
+      "hash": "79236700f583b1056b9c43eed4e0ebf1",
       "childHash": "1e0c35c90314210d539c6cd72e505904",
       "reused": false
     },
     {
       "uuid": "96613b05-3095-41f3-834c-4c45d0c7aadd",
       "path": "/angular",
-      "templateId": "blank.page",
-      "hash": "6c1d11bd21ac27238962323456c8c7e5",
+      "templateId": "blank.post",
+      "hash": "b0723de8e84190a5ce0b39b4e226ec4f",
       "childHash": "c64ec33121b41432944b509bf4d7ec71",
       "reused": false
     },
@@ -56,7 +65,7 @@
       "uuid": "749fb8dc-b7f8-4161-911d-dc2c22200f18",
       "path": "/header",
       "templateId": "blank.component",
-      "hash": "4569fc9744200cd897e921f7b354a761",
+      "hash": "f9e286134701cf570b26365139688c1a",
       "childHash": "3885010b8b487d0d6b6f145383ecf775",
       "reused": false
     },
@@ -64,7 +73,7 @@
       "uuid": "e7112c5b-2633-4062-8368-5b2499614917",
       "path": "/footer",
       "templateId": "blank.component",
-      "hash": "44921f746beafcdefa404f734cfe4a79",
+      "hash": "ce78f8d5871386bd60bbd28100d9deb9",
       "childHash": "b088b408604ef602c823540655b4c5b9",
       "reused": false
     }
